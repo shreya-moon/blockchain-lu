@@ -3,42 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Super Over</title>
+    <title>SuperOver</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <div class="row">
-            <div class="col">
-                <img src="pics/CSK.png" class="pic" alt="CSK" width="250px" height="250px">
-                <p class="name">Team 1</p>
-                <div class="row runs">
-                    <div>-</div>
-                    <div>-</div>
-                    <div>-</div>
-                    <div>-</div>
-                    <div>-</div>
-                    <div>-</div>
-                </div>
+   <div class="container">
+       <div class="row">
+           <div class="col">
+               <img src="pics/CSK 1.png" class="pic" alt="CSK" width="150px" height="150px">
+               <p class="name" id="team1name">CSK</p>
+               <div class="row runs" id="team1runs">
+                   <div>-</div>
+                   <div>-</div>
+                   <div>-</div>
+                   <div>-</div>
+                   <div>-</div>
+                   <div>-</div>
+               </div>
+           </div>
+           <div class="col">
+               <div class="row score">
+            <div id="team1score">0</div>
+            <div>-</div>
+            <div id="team2score">0</div>
+               </div>
+           </div>
+           <div class="col">
+            <img src="pics/MI 1.jpg" class="pic" alt="MI" width="150px" height="150px">
+            <p class="name" id="team2name">MI</p>
+            <div class="row runs" id="team2runs">
+                <div>-</div>
+                <div>-</div>
+                <div>-</div>
+                <div>-</div>
+                <div>-</div>
+                <div>-</div>
             </div>
-            <div class="score">
-                Score:0-0
-            </div>
-            <div class="col">
-                <img src="pics/MI.png" class="pic" alt="MI" width="250px" height="250px">
-                <p class="name">Team 2</p>
-                <div class="row runs">
-                    <div>-</div>
-                    <div>-</div>
-                    <div>-</div>
-                    <div>-</div>
-                    <div>-</div>
-                    <div>-</div>
-                </div>
-            </div>
-        </div>
-        <div class="row"><button id="strike" onclick="handlestrike()">Strike</button></div>
-    </div>
-    <script src="design.js"></script>
+           </div>
+       </div>
+       <div class="row">
+           <button id="strike" onclick="handlestrike()">STRIKE</button>
+       </div>
+       <div id="results"></div>
+   </div> 
+   <script src="design.js"></script>
 </body>
 </html>
